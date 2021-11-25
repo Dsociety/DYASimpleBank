@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  DYASimpleBank
+
+  Created by Daniel yebra on 24/11/21.
+  
+*/
+
+//MARK: - Common
+
+//MARK: - TransctionsView
+
+"income" = "Income";
+"expenses" = "Expenses";

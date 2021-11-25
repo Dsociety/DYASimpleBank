@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  DYASimpleBank
+
+  Created by Daniel yebra on 24/11/21.
+  
+*/
+
+//TODO: Use the automatic text collection function(Product export), at the end of development
+
+//MARK: - Common
+"General.income" = "Income";
+"General.expense" = "Expense";
+"General.total" = "Total";
+"General.fee" = "Fee";
+"General.feeAmount" = "Fee amount";
+//MARK: - TransctionsView
+
+"Transaction.title" = "Transactions";
+"Transaction.loading" = "Loading transactions";
+"Transaction.lastTransaction" = "Last transaction";

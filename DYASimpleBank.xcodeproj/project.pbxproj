@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B96EC941274EEB3800317D19 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC940274EEB3800317D19 /* LoadingView.swift */; };
+		B96EC943274EF27C00317D19 /* CodeChallengeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC942274EF27C00317D19 /* CodeChallengeRepository.swift */; };
+		B96EC945274EF6BF00317D19 /* NetworkServicesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC944274EF6BF00317D19 /* NetworkServicesError.swift */; };
+		B96EC947274EF6E200317D19 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC946274EF6E200317D19 /* NetworkProtocol.swift */; };
+		B96EC94A274EF8F200317D19 /* NetworkServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC949274EF8F200317D19 /* NetworkServiceManager.swift */; };
+		B96EC94C274F08BE00317D19 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC94B274F08BE00317D19 /* Util.swift */; };
+		B9C691B3274C372700165833 /* DYASimpleBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691B2274C372700165833 /* DYASimpleBankApp.swift */; };
+		B9C691B5274C372700165833 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691B4274C372700165833 /* TransactionsView.swift */; };
+		B9C691B7274C372800165833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C691B6274C372800165833 /* Assets.xcassets */; };
+		B9C691BA274C372800165833 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C691B9274C372800165833 /* Preview Assets.xcassets */; };
+		B9C691C4274C372900165833 /* DYASimpleBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691C3274C372900165833 /* DYASimpleBankTests.swift */; };
+		B9C691CE274C372900165833 /* DYASimpleBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691CD274C372900165833 /* DYASimpleBankUITests.swift */; };
+		B9C691D0274C372900165833 /* DYASimpleBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691CF274C372900165833 /* DYASimpleBankUITestsLaunchTests.swift */; };
+		B9C691DE274C374200165833 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691DD274C374200165833 /* APIConstant.swift */; };
+		B9C691E1274C494800165833 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691E0274C494800165833 /* Transaction.swift */; };
+		B9C691E5274D629100165833 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691E4274D629100165833 /* TransactionsListView.swift */; };
+		B9C691E7274D7E1C00165833 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691E6274D7E1C00165833 /* Color.swift */; };
+		B9C691EA274D7EC700165833 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C691E9274D7EC700165833 /* Color.xcassets */; };
+		B9C691ED274D918800165833 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691EC274D918800165833 /* Text.swift */; };
+		B9C691F0274DABBD00165833 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9C691F2274DABBD00165833 /* Localizable.strings */; };
+		B9C691F5274DADB200165833 /* LocalizableES.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9C691F7274DADB200165833 /* LocalizableES.strings */; };
+		B9C691FD274E98C100165833 /* TrasactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691FC274E98C000165833 /* TrasactionsViewModel.swift */; };
+		B9C69201274EAAF100165833 /* UseCaseTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C69200274EAAF100165833 /* UseCaseTransactions.swift */; };
+		B9C69203274EAE2200165833 /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C69202274EAE2100165833 /* UseCaseProtocol.swift */; };
+		B9C69207274EB88200165833 /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C69206274EB88200165833 /* RepositoryError.swift */; };
+		B9C69209274EB89B00165833 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C69208274EB89B00165833 /* RepositoryProtocol.swift */; };
+		B9C6920F274EB97B00165833 /* Print&LogServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6920E274EB97B00165833 /* Print&LogServices.swift */; };
+		B9C69215274EBA3500165833 /* DomainErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C69214274EBA3500165833 /* DomainErrors.swift */; };
+		B9C69217274EBD7100165833 /* TransactionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C69216274EBD7100165833 /* TransactionDTO.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9C691C0274C372900165833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9C691A7274C372700165833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9C691AE274C372700165833;
+			remoteInfo = DYASimpleBank;
+		};
+		B9C691CA274C372900165833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9C691A7274C372700165833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9C691AE274C372700165833;
+			remoteInfo = DYASimpleBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B96EC940274EEB3800317D19 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B96EC942274EF27C00317D19 /* CodeChallengeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChallengeRepository.swift; sourceTree = "<group>"; };
+		B96EC944274EF6BF00317D19 /* NetworkServicesError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServicesError.swift; sourceTree = "<group>"; };
+		B96EC946274EF6E200317D19 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		B96EC949274EF8F200317D19 /* NetworkServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceManager.swift; sourceTree = "<group>"; };
+		B96EC94B274F08BE00317D19 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B9C691AF274C372700165833 /* DYASimpleBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYASimpleBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C691B2274C372700165833 /* DYASimpleBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYASimpleBankApp.swift; sourceTree = "<group>"; };
+		B9C691B4274C372700165833 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		B9C691B6274C372800165833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9C691B9274C372800165833 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9C691BF274C372900165833 /* DYASimpleBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYASimpleBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C691C3274C372900165833 /* DYASimpleBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYASimpleBankTests.swift; sourceTree = "<group>"; };
+		B9C691C9274C372900165833 /* DYASimpleBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYASimpleBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C691CD274C372900165833 /* DYASimpleBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYASimpleBankUITests.swift; sourceTree = "<group>"; };
+		B9C691CF274C372900165833 /* DYASimpleBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYASimpleBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B9C691DD274C374200165833 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		B9C691E0274C494800165833 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B9C691E4274D629100165833 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		B9C691E6274D7E1C00165833 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B9C691E9274D7EC700165833 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		B9C691EC274D918800165833 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		B9C691F1274DABBD00165833 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B9C691F9274DADD800165833 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LocalizableES.strings; sourceTree = "<group>"; };
+		B9C691FC274E98C000165833 /* TrasactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrasactionsViewModel.swift; sourceTree = "<group>"; };
+		B9C69200274EAAF100165833 /* UseCaseTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseTransactions.swift; sourceTree = "<group>"; };
+		B9C69202274EAE2100165833 /* UseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProtocol.swift; sourceTree = "<group>"; };
+		B9C69206274EB88200165833 /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
+		B9C69208274EB89B00165833 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		B9C6920E274EB97B00165833 /* Print&LogServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Print&LogServices.swift"; sourceTree = "<group>"; };
+		B9C69214274EBA3500165833 /* DomainErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainErrors.swift; sourceTree = "<group>"; };
+		B9C69216274EBD7100165833 /* TransactionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDTO.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9C691AC274C372700165833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C691BC274C372900165833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C691C6274C372900165833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B96EC93D274EEAA200317D19 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				B96EC940274EEB3800317D19 /* LoadingView.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		B96EC948274EF7C000317D19 /* NetworkServicesProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				B96EC944274EF6BF00317D19 /* NetworkServicesError.swift */,
+				B96EC946274EF6E200317D19 /* NetworkProtocol.swift */,
+			);
+			path = NetworkServicesProtocol;
+			sourceTree = "<group>";
+		};
+		B9C691A6274C372700165833 = {
+			isa = PBXGroup;
+			children = (
+				B9C691B1274C372700165833 /* DYASimpleBank */,
+				B9C691C2274C372900165833 /* DYASimpleBankTests */,
+				B9C691CC274C372900165833 /* DYASimpleBankUITests */,
+				B9C691B0274C372700165833 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9C691B0274C372700165833 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691AF274C372700165833 /* DYASimpleBank.app */,
+				B9C691BF274C372900165833 /* DYASimpleBankTests.xctest */,
+				B9C691C9274C372900165833 /* DYASimpleBankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9C691B1274C372700165833 /* DYASimpleBank */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691B2274C372700165833 /* DYASimpleBankApp.swift */,
+				B9C691E8274D7E9D00165833 /* Resources */,
+				B9C691DC274C373100165833 /* Constants */,
+				B9C691EB274D8F5C00165833 /* Extensions */,
+				B9C691FE274EAA1900165833 /* Services */,
+				B9C69204274EB83800165833 /* Repositories */,
+				B9C691FF274EAA9800165833 /* UseCases */,
+				B9C691DF274C490C00165833 /* Models */,
+				B9C691E2274D60BE00165833 /* ViewModels */,
+				B9C691E3274D60FF00165833 /* Views */,
+				B9C691B8274C372800165833 /* Preview Content */,
+			);
+			path = DYASimpleBank;
+			sourceTree = "<group>";
+		};
+		B9C691B8274C372800165833 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691B9274C372800165833 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B9C691C2274C372900165833 /* DYASimpleBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691C3274C372900165833 /* DYASimpleBankTests.swift */,
+			);
+			path = DYASimpleBankTests;
+			sourceTree = "<group>";
+		};
+		B9C691CC274C372900165833 /* DYASimpleBankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691CD274C372900165833 /* DYASimpleBankUITests.swift */,
+				B9C691CF274C372900165833 /* DYASimpleBankUITestsLaunchTests.swift */,
+			);
+			path = DYASimpleBankUITests;
+			sourceTree = "<group>";
+		};
+		B9C691DC274C373100165833 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691DD274C374200165833 /* APIConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B9C691DF274C490C00165833 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691E0274C494800165833 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9C691E2274D60BE00165833 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691FC274E98C000165833 /* TrasactionsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B9C691E3274D60FF00165833 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B96EC93D274EEAA200317D19 /* General */,
+				B9C691B4274C372700165833 /* TransactionsView.swift */,
+				B9C691E4274D629100165833 /* TransactionsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9C691E8274D7E9D00165833 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691B6274C372800165833 /* Assets.xcassets */,
+				B9C691E9274D7EC700165833 /* Color.xcassets */,
+				B9C691F2274DABBD00165833 /* Localizable.strings */,
+				B9C691F7274DADB200165833 /* LocalizableES.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B9C691EB274D8F5C00165833 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691E6274D7E1C00165833 /* Color.swift */,
+				B9C691EC274D918800165833 /* Text.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B9C691FE274EAA1900165833 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B9C6920E274EB97B00165833 /* Print&LogServices.swift */,
+				B96EC94B274F08BE00317D19 /* Util.swift */,
+				B9C69205274EB84400165833 /* NetworkServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B9C691FF274EAA9800165833 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				B9C6921A274EC38300165833 /* ProtocolUseCase */,
+				B9C69200274EAAF100165833 /* UseCaseTransactions.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		B9C69204274EB83800165833 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B9C69219274EC35800165833 /* RepositoryProtocol */,
+				B9C69218274EC32D00165833 /* CodeChallengeRepository */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B9C69205274EB84400165833 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				B96EC948274EF7C000317D19 /* NetworkServicesProtocol */,
+				B96EC949274EF8F200317D19 /* NetworkServiceManager.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		B9C69210274EB9AF00165833 /* ModelDTO */ = {
+			isa = PBXGroup;
+			children = (
+				B9C69216274EBD7100165833 /* TransactionDTO.swift */,
+			);
+			path = ModelDTO;
+			sourceTree = "<group>";
+		};
+		B9C69218274EC32D00165833 /* CodeChallengeRepository */ = {
+			isa = PBXGroup;
+			children = (
+				B9C69210274EB9AF00165833 /* ModelDTO */,
+				B96EC942274EF27C00317D19 /* CodeChallengeRepository.swift */,
+			);
+			path = CodeChallengeRepository;
+			sourceTree = "<group>";
+		};
+		B9C69219274EC35800165833 /* RepositoryProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				B9C69206274EB88200165833 /* RepositoryError.swift */,
+				B9C69208274EB89B00165833 /* RepositoryProtocol.swift */,
+			);
+			path = RepositoryProtocol;
+			sourceTree = "<group>";
+		};
+		B9C6921A274EC38300165833 /* ProtocolUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B9C69214274EBA3500165833 /* DomainErrors.swift */,
+				B9C69202274EAE2100165833 /* UseCaseProtocol.swift */,
+			);
+			path = ProtocolUseCase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9C691AE274C372700165833 /* DYASimpleBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9C691D3274C372900165833 /* Build configuration list for PBXNativeTarget "DYASimpleBank" */;
+			buildPhases = (
+				B9C691AB274C372700165833 /* Sources */,
+				B9C691AC274C372700165833 /* Frameworks */,
+				B9C691AD274C372700165833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYASimpleBank;
+			productName = DYASimpleBank;
+			productReference = B9C691AF274C372700165833 /* DYASimpleBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9C691BE274C372900165833 /* DYASimpleBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9C691D6274C372900165833 /* Build configuration list for PBXNativeTarget "DYASimpleBankTests" */;
+			buildPhases = (
+				B9C691BB274C372900165833 /* Sources */,
+				B9C691BC274C372900165833 /* Frameworks */,
+				B9C691BD274C372900165833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9C691C1274C372900165833 /* PBXTargetDependency */,
+			);
+			name = DYASimpleBankTests;
+			productName = DYASimpleBankTests;
+			productReference = B9C691BF274C372900165833 /* DYASimpleBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9C691C8274C372900165833 /* DYASimpleBankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9C691D9274C372900165833 /* Build configuration list for PBXNativeTarget "DYASimpleBankUITests" */;
+			buildPhases = (
+				B9C691C5274C372900165833 /* Sources */,
+				B9C691C6274C372900165833 /* Frameworks */,
+				B9C691C7274C372900165833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9C691CB274C372900165833 /* PBXTargetDependency */,
+			);
+			name = DYASimpleBankUITests;
+			productName = DYASimpleBankUITests;
+			productReference = B9C691C9274C372900165833 /* DYASimpleBankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9C691A7274C372700165833 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					B9C691AE274C372700165833 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					B9C691BE274C372900165833 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = B9C691AE274C372700165833;
+					};
+					B9C691C8274C372900165833 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = B9C691AE274C372700165833;
+					};
+				};
+			};
+			buildConfigurationList = B9C691AA274C372700165833 /* Build configuration list for PBXProject "DYASimpleBank" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = B9C691A6274C372700165833;
+			productRefGroup = B9C691B0274C372700165833 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9C691AE274C372700165833 /* DYASimpleBank */,
+				B9C691BE274C372900165833 /* DYASimpleBankTests */,
+				B9C691C8274C372900165833 /* DYASimpleBankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9C691AD274C372700165833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C691F5274DADB200165833 /* LocalizableES.strings in Resources */,
+				B9C691BA274C372800165833 /* Preview Assets.xcassets in Resources */,
+				B9C691F0274DABBD00165833 /* Localizable.strings in Resources */,
+				B9C691B7274C372800165833 /* Assets.xcassets in Resources */,
+				B9C691EA274D7EC700165833 /* Color.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C691BD274C372900165833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C691C7274C372900165833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9C691AB274C372700165833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C69201274EAAF100165833 /* UseCaseTransactions.swift in Sources */,
+				B9C691E5274D629100165833 /* TransactionsListView.swift in Sources */,
+				B9C691E7274D7E1C00165833 /* Color.swift in Sources */,
+				B9C691B5274C372700165833 /* TransactionsView.swift in Sources */,
+				B96EC94C274F08BE00317D19 /* Util.swift in Sources */,
+				B9C69207274EB88200165833 /* RepositoryError.swift in Sources */,
+				B96EC945274EF6BF00317D19 /* NetworkServicesError.swift in Sources */,
+				B96EC947274EF6E200317D19 /* NetworkProtocol.swift in Sources */,
+				B96EC941274EEB3800317D19 /* LoadingView.swift in Sources */,
+				B9C69209274EB89B00165833 /* RepositoryProtocol.swift in Sources */,
+				B9C69215274EBA3500165833 /* DomainErrors.swift in Sources */,
+				B9C6920F274EB97B00165833 /* Print&LogServices.swift in Sources */,
+				B9C691ED274D918800165833 /* Text.swift in Sources */,
+				B9C691FD274E98C100165833 /* TrasactionsViewModel.swift in Sources */,
+				B96EC943274EF27C00317D19 /* CodeChallengeRepository.swift in Sources */,
+				B9C69217274EBD7100165833 /* TransactionDTO.swift in Sources */,
+				B9C691B3274C372700165833 /* DYASimpleBankApp.swift in Sources */,
+				B96EC94A274EF8F200317D19 /* NetworkServiceManager.swift in Sources */,
+				B9C691E1274C494800165833 /* Transaction.swift in Sources */,
+				B9C691DE274C374200165833 /* APIConstant.swift in Sources */,
+				B9C69203274EAE2200165833 /* UseCaseProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C691BB274C372900165833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C691C4274C372900165833 /* DYASimpleBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C691C5274C372900165833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C691CE274C372900165833 /* DYASimpleBankUITests.swift in Sources */,
+				B9C691D0274C372900165833 /* DYASimpleBankUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9C691C1274C372900165833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9C691AE274C372700165833 /* DYASimpleBank */;
+			targetProxy = B9C691C0274C372900165833 /* PBXContainerItemProxy */;
+		};
+		B9C691CB274C372900165833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9C691AE274C372700165833 /* DYASimpleBank */;
+			targetProxy = B9C691CA274C372900165833 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9C691F2274DABBD00165833 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9C691F1274DABBD00165833 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B9C691F7274DADB200165833 /* LocalizableES.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9C691F9274DADD800165833 /* es */,
+			);
+			name = LocalizableES.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9C691D1274C372900165833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9C691D2274C372900165833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9C691D4274C372900165833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DYASimpleBank/Preview Content\"";
+				DEVELOPMENT_TEAM = 8MBV4UU4DV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyebra.DYASimpleBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9C691D5274C372900165833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DYASimpleBank/Preview Content\"";
+				DEVELOPMENT_TEAM = 8MBV4UU4DV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyebra.DYASimpleBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B9C691D7274C372900165833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8MBV4UU4DV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyebra.DYASimpleBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYASimpleBank.app/DYASimpleBank";
+			};
+			name = Debug;
+		};
+		B9C691D8274C372900165833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8MBV4UU4DV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyebra.DYASimpleBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYASimpleBank.app/DYASimpleBank";
+			};
+			name = Release;
+		};
+		B9C691DA274C372900165833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8MBV4UU4DV;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyebra.DYASimpleBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DYASimpleBank;
+			};
+			name = Debug;
+		};
+		B9C691DB274C372900165833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8MBV4UU4DV;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyebra.DYASimpleBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DYASimpleBank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9C691AA274C372700165833 /* Build configuration list for PBXProject "DYASimpleBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C691D1274C372900165833 /* Debug */,
+				B9C691D2274C372900165833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9C691D3274C372900165833 /* Build configuration list for PBXNativeTarget "DYASimpleBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C691D4274C372900165833 /* Debug */,
+				B9C691D5274C372900165833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9C691D6274C372900165833 /* Build configuration list for PBXNativeTarget "DYASimpleBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C691D7274C372900165833 /* Debug */,
+				B9C691D8274C372900165833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9C691D9274C372900165833 /* Build configuration list for PBXNativeTarget "DYASimpleBankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C691DA274C372900165833 /* Debug */,
+				B9C691DB274C372900165833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9C691A7274C372700165833 /* Project object */;
+}
