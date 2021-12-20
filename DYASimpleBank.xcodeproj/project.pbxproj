@@ -13,6 +13,7 @@
 		B96EC947274EF6E200317D19 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC946274EF6E200317D19 /* NetworkProtocol.swift */; };
 		B96EC94A274EF8F200317D19 /* NetworkServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC949274EF8F200317D19 /* NetworkServiceManager.swift */; };
 		B96EC94C274F08BE00317D19 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC94B274F08BE00317D19 /* Util.swift */; };
+		B96EC94E274FC2AA00317D19 /* ViewErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC94D274FC2AA00317D19 /* ViewErrors.swift */; };
 		B9C691B3274C372700165833 /* DYASimpleBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691B2274C372700165833 /* DYASimpleBankApp.swift */; };
 		B9C691B5274C372700165833 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C691B4274C372700165833 /* TransactionsView.swift */; };
 		B9C691B7274C372800165833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C691B6274C372800165833 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		B96EC946274EF6E200317D19 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		B96EC949274EF8F200317D19 /* NetworkServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceManager.swift; sourceTree = "<group>"; };
 		B96EC94B274F08BE00317D19 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B96EC94D274FC2AA00317D19 /* ViewErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewErrors.swift; sourceTree = "<group>"; };
 		B9C691AF274C372700165833 /* DYASimpleBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYASimpleBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C691B2274C372700165833 /* DYASimpleBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYASimpleBankApp.swift; sourceTree = "<group>"; };
 		B9C691B4274C372700165833 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,35 @@
 			path = NetworkServicesProtocol;
 			sourceTree = "<group>";
 		};
+		B96EC94F274FC4A300317D19 /* View-ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B96EC94D274FC2AA00317D19 /* ViewErrors.swift */,
+				B96EC93D274EEAA200317D19 /* General */,
+				B96EC950274FC53100317D19 /* Trasactions */,
+			);
+			path = "View-ViewModels";
+			sourceTree = "<group>";
+		};
+		B96EC950274FC53100317D19 /* Trasactions */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691FC274E98C000165833 /* TrasactionsViewModel.swift */,
+				B9C691B4274C372700165833 /* TransactionsView.swift */,
+				B9C691E4274D629100165833 /* TransactionsListView.swift */,
+			);
+			path = Trasactions;
+			sourceTree = "<group>";
+		};
+		B9AF014F275565E900B69FE6 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				B9C691F2274DABBD00165833 /* Localizable.strings */,
+				B9C691F7274DADB200165833 /* LocalizableES.strings */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
 		B9C691A6274C372700165833 = {
 			isa = PBXGroup;
 			children = (
@@ -160,11 +191,10 @@
 				B9C691DC274C373100165833 /* Constants */,
 				B9C691EB274D8F5C00165833 /* Extensions */,
 				B9C691FE274EAA1900165833 /* Services */,
+				B9C691DF274C490C00165833 /* Models */,
 				B9C69204274EB83800165833 /* Repositories */,
 				B9C691FF274EAA9800165833 /* UseCases */,
-				B9C691DF274C490C00165833 /* Models */,
-				B9C691E2274D60BE00165833 /* ViewModels */,
-				B9C691E3274D60FF00165833 /* Views */,
+				B96EC94F274FC4A300317D19 /* View-ViewModels */,
 				B9C691B8274C372800165833 /* Preview Content */,
 			);
 			path = DYASimpleBank;
@@ -211,31 +241,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B9C691E2274D60BE00165833 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				B9C691FC274E98C000165833 /* TrasactionsViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		B9C691E3274D60FF00165833 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B96EC93D274EEAA200317D19 /* General */,
-				B9C691B4274C372700165833 /* TransactionsView.swift */,
-				B9C691E4274D629100165833 /* TransactionsListView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		B9C691E8274D7E9D00165833 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B9AF014F275565E900B69FE6 /* Languages */,
 				B9C691B6274C372800165833 /* Assets.xcassets */,
 				B9C691E9274D7EC700165833 /* Color.xcassets */,
-				B9C691F2274DABBD00165833 /* Localizable.strings */,
-				B9C691F7274DADB200165833 /* LocalizableES.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -472,6 +483,7 @@
 				B96EC943274EF27C00317D19 /* CodeChallengeRepository.swift in Sources */,
 				B9C69217274EBD7100165833 /* TransactionDTO.swift in Sources */,
 				B9C691B3274C372700165833 /* DYASimpleBankApp.swift in Sources */,
+				B96EC94E274FC2AA00317D19 /* ViewErrors.swift in Sources */,
 				B96EC94A274EF8F200317D19 /* NetworkServiceManager.swift in Sources */,
 				B9C691E1274C494800165833 /* Transaction.swift in Sources */,
 				B9C691DE274C374200165833 /* APIConstant.swift in Sources */,

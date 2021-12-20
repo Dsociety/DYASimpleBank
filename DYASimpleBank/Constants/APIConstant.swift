@@ -9,6 +9,5 @@ import Foundation
 
 enum APIconstant{
    static let baseURL =  "https://code-challenge-e9f47.web.app/transactions.json"
-    
 }
 

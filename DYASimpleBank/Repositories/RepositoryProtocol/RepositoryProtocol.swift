@@ -9,8 +9,7 @@ import Foundation
 
 protocol RepositoryProtocol {
     associatedtype T
-    var  networkServiceManager: NetworkServicesProtocol { get set }
-    
+            
     func get(id: Int) async throws -> T
     func list() async throws -> [T]
     func add(_ item: T) async throws ->()

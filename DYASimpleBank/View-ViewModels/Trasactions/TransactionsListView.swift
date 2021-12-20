@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TransactionsListView: View {
+    @StateObject private var viewModel = TransactionsViewModel(
+        useCase: UseCaseTransaction())
     
     var transactions: [Transaction] = []
     
@@ -23,6 +25,8 @@ struct TransactionsListView: View {
             ForEach(transactionRmvFrst){ transaction in
                 TransactionCell(transaction: transaction)
             }
+        }.refreshable {
+            await viewModel.getTransactions()
         }
     }
 }
